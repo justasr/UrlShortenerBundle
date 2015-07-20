@@ -1,0 +1,7 @@
+services:
+    url_shortener.shortlinkservice:
+        class: UrlShortenerBundle\Services\ShortLinkService
+        calls:
+            - [setLinkManager,["@mremi_url_shortener.link_manager"]]
+            - [setEntityManager,["@doctrine.orm.entity_manager"]]
+

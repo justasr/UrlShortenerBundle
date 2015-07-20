@@ -1,0 +1,3 @@
+url_shortener_homepage:
+    path:     /
+    defaults: { _controller: UrlShortenerBundle:Default:index }
